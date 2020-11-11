@@ -1,0 +1,77 @@
+﻿<?xml version="1.0" encoding="UTF-8"?>
+<ContentPage xmlns="http://xamarin.com/schemas/2014/forms" 
+			 xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml" 
+			 x:Class="IMIR.Page2Xaml"
+			 Title="Page 2">
+   <Grid>
+        <Grid.RowDefinitions>
+            <RowDefinition Height="*"/>
+            <RowDefinition Height=".3*"/>
+            <RowDefinition Height=".4*"/>
+            <RowDefinition Height=".6*"/>
+            <RowDefinition Height="*"/>
+            <RowDefinition Height="*"/>
+
+        </Grid.RowDefinitions>
+        <Grid.ColumnDefinitions>
+            <ColumnDefinition Width="*"/>
+            <ColumnDefinition Width="*"/>
+
+        </Grid.ColumnDefinitions>
+
+
+        <Label Grid.Row="0" Grid.ColumnSpan="2"
+            Text="Aslyum can come in three types based on your situation:"
+            VerticalTextAlignment="Center" HorizontalTextAlignment="Center"
+             Margin="10,10" FontSize="Subtitle"
+               BackgroundColor="AliceBlue"
+               />
+
+        <Label Grid.Row="1" Grid.ColumnSpan="2"
+            Padding="10"
+            Text="1. Asylum"
+            VerticalTextAlignment="Center" HorizontalTextAlignment="Start"
+            BackgroundColor="Bisque"
+            Margin="20,5" FontSize="Body"
+         />
+
+         <Label Grid.Row="2" Grid.ColumnSpan="2"
+            Padding="10"
+            Text="2. Withholding of Removal"
+            VerticalTextAlignment="Center" HorizontalTextAlignment="Start"
+            BackgroundColor="Bisque"
+            Margin="20,10" FontSize="Body"
+         />
+
+         <Label Grid.Row="3" Grid.ColumnSpan="2"
+            Padding="5"
+            Text="3. Protection under the Convention Against Torture"
+            VerticalTextAlignment="Center" HorizontalTextAlignment="Start"
+            BackgroundColor="Bisque"
+
+            Margin="20,10" FontSize="Body"
+         />
+
+         <Label Grid.Row="4" Grid.ColumnSpan="2"
+            Text="Click 'Next' to find out which you may be eligible for."
+            VerticalTextAlignment="Center" HorizontalTextAlignment="Center"
+             Margin="10,5" FontSize="Subtitle"
+            BackgroundColor="AliceBlue"
+        />
+
+        <Button Grid.Row="5" Grid.Column="1" Text="Next"
+            Padding="10" HorizontalOptions="CenterAndExpand"
+            BackgroundColor="AliceBlue" TextColor="Black" FontSize="Subtitle"
+            Clicked="OnNextPageButtonClicked" VerticalOptions="CenterAndExpand"
+            x:Name="nextButton"
+        />
+
+        <Button Grid.Row="5" Grid.Column="0" Text="Previous"
+            Padding="10" HorizontalOptions="CenterAndExpand"
+            BackgroundColor="AliceBlue" TextColor="Black" FontSize="Subtitle"
+            Clicked="OnPreviousPageButtonClicked" VerticalOptions="CenterAndExpand"
+            x:Name="previousButton"
+        />
+
+    </Grid>
+</ContentPage>

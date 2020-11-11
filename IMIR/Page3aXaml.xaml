@@ -1,0 +1,67 @@
+﻿<?xml version="1.0" encoding="UTF-8"?>
+<ContentPage xmlns="http://xamarin.com/schemas/2014/forms" 
+			 xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml" 
+			 x:Class="IMIR.Page3aXaml"
+			 Title="Page 3a">
+
+	<Grid>
+
+         <Grid.RowDefinitions>
+            <RowDefinition Height="1.4*"/>
+            <RowDefinition Height="1.4*"/>
+            <RowDefinition Height="*"/>
+            <RowDefinition Height="*"/>
+            <RowDefinition Height="*"/>
+            <RowDefinition Height=".5*"/>
+            <RowDefinition Height="*"/>
+
+        </Grid.RowDefinitions>
+
+        <Grid.ColumnDefinitions>
+            <ColumnDefinition Width="2*"/>
+            <ColumnDefinition Width="*"/>
+
+        </Grid.ColumnDefinitions>
+
+		<Label Grid.Row="0"
+         Text="Because you checked one of the boxes on the previous screen,
+		 you are not eligible to apply for asylum but may qualify for Withholding from Removal"/>
+
+
+
+
+        <Label Padding="7" Grid.Row="1" Grid.ColumnSpan="2" Text="Check if your answer to one of the below questions is yes:" Margin="30,30" FontSize="Subtitle" BackgroundColor="AliceBlue"/>
+
+
+            <Label Grid.Row="2" Grid.Column="0" Text="Have you been in the United States for more than one year OR are under 18 OR have a mental illness?" Margin="20,0" />
+            <CheckBox Grid.Row="2" Grid.Column="1" CheckedChanged="OnCheckBoxCheckedChanged">
+            </CheckBox>
+
+            <Label Grid.Row="3" Grid.Column="0" Text="Have you applied for asylum to the United States before and had your application rejected?" Margin="20,0" />
+            <CheckBox Grid.Row="3" Grid.Column="1" CheckedChanged="OnCheckBoxCheckedChanged">
+            </CheckBox>
+
+            <Label Grid.Row="4" Grid.Column="0" Text="Could you be moved to a safe third party country?" Margin="20,0" />
+            <CheckBox Grid.Row="4" Grid.Column="1" CheckedChanged="OnCheckBoxCheckedChanged">
+            </CheckBox>
+
+
+        <Button Grid.Row="5" Grid.Column="1" Text="Next"
+            Padding="10" HorizontalOptions="CenterAndExpand"
+            BackgroundColor="AliceBlue" TextColor="Black" FontSize="Subtitle"
+            Clicked="OnNextPageButtonClicked" VerticalOptions="CenterAndExpand"
+            x:Name="nextButton"
+        />
+
+        <Button Grid.Row="5" Grid.Column="0" Text="Previous"
+            Padding="10" HorizontalOptions="CenterAndExpand"
+            BackgroundColor="AliceBlue" TextColor="Black" FontSize="Subtitle"
+            Clicked="OnPreviousPageButtonClicked" VerticalOptions="CenterAndExpand"
+            x:Name="previousButton"
+        />
+
+        <Button Grid.Row="6" Grid.ColumnSpan="2" x:Name="rootButton" Text="Return to Home Page" Clicked="OnRootPageButtonClicked" VerticalOptions="CenterAndExpand" />
+
+    </Grid>
+
+</ContentPage>

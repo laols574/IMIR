@@ -1,0 +1,147 @@
+﻿<?xml version="1.0" encoding="UTF-8"?>
+<ContentPage xmlns="http://xamarin.com/schemas/2014/forms" xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml" x:Class="IMIR.Page3bXaml">
+
+    <Grid RowSpacing="0">
+
+         <Grid.RowDefinitions>
+            <RowDefinition Height=".5*"/>
+            <RowDefinition Height=".3*"/>
+            <RowDefinition Height="4*"/>
+            <RowDefinition Height="*"/>
+            <RowDefinition Height=".5*"/>
+            <RowDefinition Height=".5*"/>
+
+        </Grid.RowDefinitions>
+
+        <Grid.ColumnDefinitions>
+            <ColumnDefinition Width="*"/>
+            <ColumnDefinition Width="*"/>
+
+        </Grid.ColumnDefinitions>
+
+		<Label Grid.Row="0" Text="Because you didn't check any of the boxes on the previous screen, you may be eligible to apply for asylum."
+         Margin="10,0" FontSize="Small" BackgroundColor="AliceBlue"
+         HorizontalOptions="CenterAndExpand" VerticalOptions="CenterAndExpand"
+         Grid.ColumnSpan="2"/>
+
+        <Label Grid.Row="1" Text="Fill out the form below to find out if you are eligible for asylum."
+         Margin= "10,0" FontSize="Small" BackgroundColor="AliceBlue"
+               HorizontalOptions="CenterAndExpand" VerticalOptions="CenterAndExpand"
+               Grid.ColumnSpan="2"/>
+
+
+        <ScrollView Grid.Row="2" Grid.ColumnSpan="2" VerticalOptions="FillAndExpand">
+
+            <Grid ColumnSpacing="0" RowSpacing="0" Padding="5">
+                <Grid.RowDefinitions>
+                    <RowDefinition Height=".1*"/>
+                    <RowDefinition Height=".5*"/>
+                    <RowDefinition Height=".2*"/>
+                    <RowDefinition Height=".2*"/>
+                    <RowDefinition Height=".2*"/>
+                    <RowDefinition Height=".2*"/>
+                    <RowDefinition Height=".2*"/>
+                    <RowDefinition Height=".2*"/>
+                    <RowDefinition Height=".2*"/>
+                    <RowDefinition Height=".2*"/>
+                    <RowDefinition Height=".2*"/>
+                    <RowDefinition Height=".2*"/>
+                    <RowDefinition Height=".2*"/>
+                    <RowDefinition Height=".2*"/>
+                </Grid.RowDefinitions>
+
+                <Grid.ColumnDefinitions>
+                    <ColumnDefinition Width="2*"/>
+                    <ColumnDefinition Width="*"/>
+                </Grid.ColumnDefinitions>
+
+                <Label Grid.Row="0" Grid.ColumnSpan="2" Text="Check the box if your answer to one of the below questions is yes:"
+                        FontSize="Small" BackgroundColor="AliceBlue"/>
+
+
+                    <Label FontSize="Small" Grid.Row="1" Grid.Column="0" VerticalOptions="CenterAndExpand"
+                           Text="Have you ordered, incited, assisted, or otherwise participated in the persecution of any person on account of race, religion, nationality, membership in a particular social group, or political opinion?"/>
+                    <CheckBox Grid.Row="1" Grid.Column="1" CheckedChanged="OnCheckBoxCheckedChanged">
+                    </CheckBox>
+
+                    <Label FontSize="Small" Grid.Row="2" Grid.Column="0" VerticalOptions="CenterAndExpand"
+                           Text="Have you been convicted of a “particularly serious crime” such that you are a danger to the United States"/>
+                    <CheckBox Grid.Row="2" Grid.Column="1" CheckedChanged="OnCheckBoxCheckedChanged">
+                    </CheckBox>
+
+                    <Label FontSize="Small" Grid.Row="3" Grid.Column="0" VerticalOptions="CenterAndExpand"
+                           Text="Have you committed a “serious nonpolitical crime” outside the United States?"  />
+                    <CheckBox Grid.Row="3" Grid.Column="1" CheckedChanged="OnCheckBoxCheckedChanged">
+                    </CheckBox>
+
+                    <Label FontSize="Small" Grid.Row="4" Grid.Column="0" VerticalOptions="CenterAndExpand"
+                           Text="Could you be considered a danger to the security of the United States?"  />
+                    <CheckBox Grid.Row="4" Grid.Column="1" CheckedChanged="OnCheckBoxCheckedChanged">
+                    </CheckBox>
+
+                    <Label FontSize="Small" Grid.Row="5" Grid.Column="0" VerticalOptions="CenterAndExpand"
+                           Text="Have you been firmly resettled in another country before arriving in the United States?"  />
+                    <CheckBox Grid.Row="5" Grid.Column="1" CheckedChanged="OnCheckBoxCheckedChanged">
+                    </CheckBox>
+
+                    <Label FontSize="Small" Grid.Row="6" Grid.Column="0" VerticalOptions="CenterAndExpand"
+                           Text="Have you engaged in terrorist activity?" />
+                    <CheckBox Grid.Row="6" Grid.Column="1" CheckedChanged="OnCheckBoxCheckedChanged">
+                    </CheckBox>
+
+                    <Label FontSize="Small" Grid.Row="7" Grid.Column="0" VerticalOptions="CenterAndExpand"
+                           Text="Are you engaging in terrorist activity or likely to after entry into the United States?" />
+                    <CheckBox Grid.Row="7" Grid.Column="1" CheckedChanged="OnCheckBoxCheckedChanged">
+                    </CheckBox>
+
+                    <Label FontSize="Small" Grid.Row="8" Grid.Column="0" VerticalOptions="CenterAndExpand"
+                           Text="Have you encited terrorist activity?" />
+                    <CheckBox Grid.Row="8" Grid.Column="1" CheckedChanged="OnCheckBoxCheckedChanged">
+                    </CheckBox>
+
+                    <Label FontSize="Small" Grid.Row="9" Grid.Column="0" VerticalOptions="CenterAndExpand"
+                           Text="Are you a representative of a foreign terrorist organization?"  />
+                    <CheckBox Grid.Row="9" Grid.Column="1" CheckedChanged="OnCheckBoxCheckedChanged">
+                    </CheckBox>
+
+                    <Label FontSize="Small" Grid.Row="10" Grid.Column="0" VerticalOptions="CenterAndExpand"
+                           Text="Are you a member of a terrorist organization?" />
+                    <CheckBox Grid.Row="10" Grid.Column="1" CheckedChanged="OnCheckBoxCheckedChanged">
+                    </CheckBox>
+
+                    <Label FontSize="Small" Grid.Row="11" Grid.Column="0" VerticalOptions="CenterAndExpand"
+                           Text="Have persuaded others to support terrorist activity or a terrorist organization?"  />
+                    <CheckBox Grid.Row="11" Grid.Column="1" CheckedChanged="OnCheckBoxCheckedChanged">
+                    </CheckBox>
+
+                    <Label FontSize="Small" Grid.Row="12" Grid.Column="0" VerticalOptions="CenterAndExpand"
+                           Text="Have received military training from a terrorist organization?" />
+                    <CheckBox Grid.Row="12" Grid.Column="1" CheckedChanged="OnCheckBoxCheckedChanged">
+                    </CheckBox>
+
+                    <Label FontSize="Small" Grid.Row="13" Grid.Column="0" VerticalOptions="CenterAndExpand"
+                           Text="Are you the spouse or child of an individual who is inadmissible for any of the above within the last 5 years?" />
+                    <CheckBox Grid.Row="13" Grid.Column="1" CheckedChanged="OnCheckBoxCheckedChanged">
+                    </CheckBox>
+            </Grid>
+               
+        </ScrollView>
+
+        <Button Grid.Row="4" Grid.Column="1" Text="Next"
+            Padding="10" HorizontalOptions="CenterAndExpand"
+            BackgroundColor="AliceBlue" TextColor="Black" FontSize="Subtitle"
+            Clicked="OnNextPageButtonClicked" VerticalOptions="CenterAndExpand"
+            x:Name="nextButton"
+        />
+
+        <Button Grid.Row="4" Grid.Column="0" Text="Previous"
+            Padding="10" HorizontalOptions="CenterAndExpand"
+            BackgroundColor="AliceBlue" TextColor="Black" FontSize="Subtitle"
+            Clicked="OnPreviousPageButtonClicked" VerticalOptions="CenterAndExpand"
+            x:Name="previousButton"
+        />
+
+        <Button Grid.Row="5" Grid.ColumnSpan="2" x:Name="rootButton" Text="Return to Home Page" Clicked="OnRootPageButtonClicked" VerticalOptions="CenterAndExpand" />
+
+    </Grid>
+</ContentPage>
