@@ -20,9 +20,11 @@ however, much content is missing and layout is faulty in areas.
 
 ## References
 For asylum information:
+
 https://www.uscis.gov/sites/default/files/document/forms/i-589instr.pdf
 https://www.uscis.gov/humanitarian/refugees-and-asylum/asylum/asylum-bars
 https://www.uscis.gov/humanitarian/refugees-and-asylum/asylum/bars-to-asylum-and-inadmissibility-grounds-related-to-terrorist-activity
 
 For Xamarin Forms:
-docs.microsoft.com
+
+https://docs.microsoft.com/en-us/xamarin/xamarin-forms/
