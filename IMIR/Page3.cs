@@ -17,13 +17,25 @@ namespace IMIR
 			var nextPageButton = new Button { Text = "Next Page", VerticalOptions = LayoutOptions.CenterAndExpand };
 			nextPageButton.Clicked += OnNextPageButtonClicked;
 
+			var beforeButton = new Button { Text = "Learn More", VerticalOptions = LayoutOptions.CenterAndExpand };
+			previousPageButton.Clicked += OnBeforeClicked;
+
+			var thirdPartyButton = new Button { Text = "Learn More", VerticalOptions = LayoutOptions.CenterAndExpand };
+			rootPageButton.Clicked += OnThirdPartyClicked;
+
+			var oneYearButton = new Button { Text = "Learn More", VerticalOptions = LayoutOptions.CenterAndExpand };
+			nextPageButton.Clicked += OnOneYearClicked;
+
 			Title = "Page 3";
 			Content = new StackLayout
 			{
 				Children = {
 					previousPageButton,
 					nextPageButton,
-					rootPageButton
+					rootPageButton,
+					beforeButton,
+					thirdPartyButton,
+					oneYearButton
 				}
 			};
 		}
@@ -49,6 +61,22 @@ namespace IMIR
 				await Navigation.PushAsync(new Page3bXaml());
 
 			}
+
+		}
+
+		async void OnThirdPartyClicked(object sender, EventArgs e)
+		{
+			await Navigation.PushAsync(new ThirdPartyXaml());
+
+		}
+		async void OnBeforeClicked(object sender, EventArgs e)
+		{
+			await Navigation.PushAsync(new BeforeXaml());
+
+		}
+		async void OnOneYearClicked(object sender, EventArgs e)
+		{
+			await Navigation.PushAsync(new OneYearXaml());
 
 		}
 

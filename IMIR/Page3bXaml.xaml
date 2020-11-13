@@ -53,6 +53,7 @@
                 <Grid.ColumnDefinitions>
                     <ColumnDefinition Width="2*"/>
                     <ColumnDefinition Width="*"/>
+
                 </Grid.ColumnDefinitions>
 
                 <Label Grid.Row="0" Grid.ColumnSpan="2" Text="Check the box if your answer to one of the below questions is yes:"

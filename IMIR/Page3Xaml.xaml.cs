@@ -42,5 +42,21 @@ namespace IMIR
             }
 
         }
+
+        async void OnThirdPartyClicked(object sender, EventArgs e)
+        {
+            await Navigation.PushAsync(new ThirdPartyXaml());
+
+        }
+        async void OnBeforeClicked(object sender, EventArgs e)
+        {
+            await Navigation.PushAsync(new BeforeXaml());
+
+        }
+        async void OnOneYearClicked(object sender, EventArgs e)
+        {
+            await Navigation.PushAsync(new OneYearXaml());
+
+        }
     }
 }
